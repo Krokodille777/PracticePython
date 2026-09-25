@@ -1,4 +1,4 @@
-characters = ['Ginny', "The Puppeteer", "Lyra", "Mara", "Veronika", "Balthazar", "Toto" , "Elder Thorne"]
+characters = ['Ginny', "The Puppeteer", "Lyra", "Mara", "Veronika","Balthazar", "Toto" , "Elder Thorne"]
 print(characters)
 #1
 if "The Puppeteer" in characters:
@@ -49,19 +49,18 @@ for creature in range(len(characters)):
 
 #7 Sort more_characters in alphabetic order and print it
 
-def sort_characters(characters_list):
-    for sublist in characters_list:
-        sublist.sort()
-    return characters_list
 
-characters = sort_characters(characters)
+for creature in range(len(characters)):
+    characters.sort()
+
+
 print(characters)
 
 #8 Use count() method
 
-print(characters[0].count("Lyra"))
+print(characters.count("Lyra"))
 
 #9 Use index() method
 
-print(characters[1].index("Toto"))
+print(characters.index("Toto"))
 
