@@ -40,9 +40,16 @@ print(ginnysDict)
 
 #4 and 5 keys() and values()
 
-print(ginnysDict.keys())
-print(ginnysDict.values())
+for x in ginnysDict.keys():
+    print(x)
+
+for y in ginnysDict.values():
+    print(y)
 
 #6 and 7 items() and update()
-print(ginnysDict.items())
-print(ginnysDict.update(("favorite_phrase", "You're all Big Meanies!")))
+for x, y in ginnysDict.items():
+    print(x, y)
+new_item2 = {"favorite_phrase": "You're all Big Meanies!"}
+ginnysDict.update(new_item2)
+
+print(ginnysDict)
